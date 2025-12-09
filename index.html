@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aisha Bakery ERP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+            },
+            colors: {
+              bakery: {
+                50: '#fff1f2',  /* Rose 50 */
+                100: '#ffe4e6', /* Rose 100 */
+                200: '#fecdd3', /* Rose 200 */
+                300: '#fda4af', /* Rose 300 */
+                400: '#fb7185', /* Rose 400 */
+                500: '#f43f5e', /* Rose 500 - Primary Pink */
+                600: '#e11d48', /* Rose 600 */
+                700: '#be123c', /* Rose 700 */
+                800: '#9f1239', /* Rose 800 */
+                900: '#881337', /* Rose 900 */
+              },
+              cream: {
+                50: '#fffbf0',
+                100: '#fff7e0',
+              }
+            },
+            borderRadius: {
+              '3xl': '1.5rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar for a premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fff1f2; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #fda4af; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #fb7185; 
+      }
+      body {
+        background-color: #fffbf0; /* Cream background for extra warmth */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body class="text-slate-800 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
